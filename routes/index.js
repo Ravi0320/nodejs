@@ -6,7 +6,7 @@ var {insert,select,update,delete_data,search_data} = require('../controller/user
 
 
 router.post('/',insert);
-router.get('/',select);
+router.get('/select',select);
 router.post('/update/:id',update);
 router.get('/delete/:id',delete_data);
 router.get('/search/:name',search_data);
